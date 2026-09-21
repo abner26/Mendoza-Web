@@ -1,0 +1,585 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-color: var(--azul-marino);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 20, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1,
+.hero-content p {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero-content .btn {
+  background-color: #f5c518;
+  color: #002147;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background-color: #002147;
+  color: #f5c518;
+}
+
+.testimonios {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 32px;
+  color: #002147;
+  margin-bottom: 40px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.testimonio {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.testimonio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonio p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonio span {
+  color: var(--dorado);
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.testimonio h4 {
+  font-size: 16px;
+  color: #002147;
+}
+
+.botones-reseñas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.botones-reseñas .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #002147;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.botones-reseñas .btn:hover {
+  background-color: var(--dorado);
+  color: #002147;
+}
+
+.contacto {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contacto-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.contacto .formulario {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: auto;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contacto button {
+  background-color: var(--dorado);
+  color: var(--azul-marino);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background-color: #b19000;
+}
+
+.contacto .mapa {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ---------------- SERVICIOS ---------------- */
+.servicios {
+  background-color: var(--gris-claro);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.servicio {
+  background-color: white;
+  padding: 25px;
+  border-left: 5px solid var(--dorado);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.servicio h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: var(--azul-marino);
+}
+
+.servicio p {
+  color: var(--azul-marino);
+  line-height: 1.5;
+}
+
+/* Animaciones para iconos en servicios de inicio */
+.servicio h3 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--azul-marino);
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.servicio h3 a i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.servicio h3 a:hover {
+  color: var(--dorado);
+}
+
+.servicio h3 a:hover i {
+  animation: bounce-icon 0.6s ease;
+  color: var(--dorado);
+}
+
+.servicio-link {
+  text-decoration: none;
+  color: var(--azul-marino);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.servicio-link:hover {
+  border-bottom: 2px solid var(--dorado);
+  color: var(--dorado);
+}
+
+
+@keyframes bounce-icon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Estilo de Mision, Vision y Valores */
+.nosotros {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.nosotros h2 {
+  font-size: 2.5em;
+  color: var(--azul-marino);
+  margin-bottom: 20px;
+}
+
+.nosotros p {
+  color: var(--azul-marino);
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.nosotros-box {
+  background-color: #ffffff;
+  border-left: 4px solid var(--dorado);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.nosotros-box h3 {
+  color: var(--azul-marino);
+  margin-bottom: 10px;
+}
+
+.nosotros-box p,
+.nosotros-box ul {
+  color: var(--azul-marino);
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+.nosotros-box ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Contacto */ 
+.contacto-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 40px; /* agrega espacio lateral general */
+}
+
+.contacto-info-form {
+  flex: 1;
+  min-width: 300px;
+  text-align: flex-start;
+}
+
+.datos-contacto p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.datos-contacto a {
+  color: var(--azul-marino);
+  text-decoration: none;
+}
+
+/* NotificaciÃ³n emerjente */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(20px);
+  z-index: 9999;
+}
+
+.toast.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mapa */
+.mapa {
+  flex: 1;
+  min-width: 300px;
+  height: 350px;
+  padding: 0;
+}
+
+/* A partir de 768px (escritorio/tablet en horizontal) */
+@media (min-width: 768px) {
+  .mapa {
+    padding-right: 40px;
+  }
+}
+
+
+/*-------- Por que nosotros ---------*/
+.porque-nosotros {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.porque-nosotros .porque-subtitulo {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.titulo-seccion{
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.porque-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.porque-item {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.porque-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.porque-item .icono {
+  background-color: var(--azul-marino);
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.porque-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--azul-marino);
+}
+
+.porque-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/*-------- Mision Vision Vlores ---------*/
+.mvv {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.mvv-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.mvv-item {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.mvv-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.mvv-item h3 {
+  color: var(--azul-marino);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.mvv-item p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* */
+@media (max-width: 768px) {
+  .background-video {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+  }
+
+  .hero {
+    overflow: hidden;
+    width: 100vw;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.7em;
+  }
+}
+
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* */
+.servicios-triple {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Todos los servicios con el mismo tamaño */
+.servicios-triple .servicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: white;
+  border-left: 5px solid var(--dorado);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+/* Solo el tercer servicio va en segunda fila, centrado y del mismo tamaño */
+.servicios-triple .servicio:nth-child(3) {
+  grid-column: 1 / 3;
+  width: calc(50% - 15px); /* igual al ancho de los otros dos, considerando el gap */
+  margin: 0 auto; /* centrado */
+}
+
+@media (max-width: 768px) {
+  .servicios-triple {
+    grid-template-columns: 1fr;
+  }
+
+  .servicios-triple .servicio:nth-child(3) {
+    grid-column: auto;
+    width: 100%;
+    margin: 0;
+  }
+}
+

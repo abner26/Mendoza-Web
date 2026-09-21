@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mendoza Avelar & Abogados Asociados</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/subpage.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="../img/logo.png" alt="Logo Mendoza Avelar" class="logo">
+    <!-- Boton hamburguesa -->
+    <div class="hamburguesa" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown">
+        <a href="servicios.html" class="dropbtn">Servicios</a>
+        <div class="dropdown-content">
+          <a href="servicios.html">General</a>
+          <a href="litigio-amparo.html">Amparo</a>
+          <a href="consultoria.html">Consultoría Legal</a>
+          <a href="litigio-civil.html">Litigio Civil</a>
+          <a href="litigio-familiar.html">Litigio Familiar</a>
+          <a href="litigio-mercantil.html">Litigio Mercantil</a>
+          <a href="colaboracion.html">Colaboración Jurídica Externa</a>
+        </div>
+      </li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="../img/fondo_derecho.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Excelencia Jurídica</h1>
+      <p>Protegemos tus derechos con ética profesional, visión estratégica y total compromiso.</p>
+      <a href="index.html#contacto" class="btn">Solicita una consulta</a>
+    </div>
+  </section>
+
+  <!-- Cifras de confianza -->
+  <section class="estadisticas" data-aos="fade-up">
+    <div class="estadistica">
+      <h3>+10</h3>
+      <p>Años de experiencia jurídica</p>
+    </div>
+    <div class="estadistica">
+      <h3>+1,000</h3>
+      <p>Casos y asuntos atendidos</p>
+    </div>
+    <div class="estadistica">
+      <h3>95%</h3>
+      <p>Índice de satisfacción de nuestros clientes</p>
+    </div>
+  </section>
+
+  <!-- Por que nosotros --> 
+  <section class="porque-nosotros fade-in-section" data-aos="fade-up">
+    <h2 class="titulo-seccion">¿Por qué elegirnos?</h2>
+    <p class="porque-subtitulo">Contamos con años de experiencia brindando soluciones legales claras, personalizadas y efectivas.</p>
+
+    <div class="porque-grid">
+      <div class="porque-item" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icono"><i class="fa-solid fa-calendar-days"></i></div>
+        <h3>Experiencia</h3>
+        <p>Sólida trayectoria en diversas ramas del derecho, defendiendo los intereses de nuestros clientes, especialmente en el juicio de amparo y en las materias de derecho familiar, civil y mercantil.</p>
+      </div>
+      <div class="porque-item" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icono"><i class="fas fa-user-friends"></i></div>
+        <h3>Enfoque al Cliente</h3>
+        <p>Tu situación nos importa. Te escuchamos, analizamos tu asunto desde una perspectiva jurídica y actuamos con compromiso y empatía.</p>
+      </div>
+      <div class="porque-item" data-aos="zoom-in" data-aos-delay="400">
+        <div class="icono"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Resultados</h3>
+        <p>Trabajamos con un esquema a corto, mediano y largo plazo, donde los resultados se demuestran en cada etapa de nuestra planeación.</p>
+      </div>
+      <div class="porque-item" data-aos="zoom-in" data-aos-delay="500">
+        <div class="icono"><i class="fas fa-eye"></i></div>
+        <h3>Transparencia</h3>
+        <p>Comunicación clara, usted será informado de los avances en cada una de las etapas de su juicio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="servicios" id="servicios" data-aos="fade-up">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid servicios-triple">
+      
+      <div class="servicio" data-aos="fade-in-section">
+        <h3><a class="servicio-link" href="consultoria.html"><i class="fas fa-file-alt"></i> Consultoría Legal </a></h3>
+        <p>Atención profesional para analizar tu situación jurídica. Desde orientación inicial hasta estudios técnicos-especializados.</p>
+      </div>
+
+      <div class="servicio" data-aos="fade-in-section">
+        <h3><a class="servicio-link" href="servicios.html#areas"><i class="fa-solid fa-scale-balanced"></i> Litigio </a></h3>
+        <p>Representación legal en conflictos judiciales: amparo, familiar, civil y mercantil.</p>
+      </div>
+
+      <div class="servicio" data-aos="fade-in-section">
+        <h3><a class="servicio-link" href="colaboracion.html"><i class="fas fa-people-group"></i> Colaboración Jurídica Externa </a></h3>
+        <p>Ofrecemos nuestra experiencia jurídica a firmas legales, corporativos y empresas que requieran apoyo externo especializado.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Nosotros -->
+  <section class="mvv fade-in-section" data-aos="fade-up">
+    <h2 class="titulo-seccion">Misión, Visión y Valores</h2>
+
+    <p class="mvv-intro">
+      En Mendoza Avelar & Abogados Asociados creemos firmemente que el ejercicio del derecho debe ir acompañado de principios éticos, compromiso social y una atención humana. Nuestra misión, visión y valores reflejan el propósito que guía cada una de nuestras acciones legales.
+    </p>
+
+    <div class="mvv-grid">
+      <div class="mvv-item">
+        <h3>Misión</h3>
+        <p>Brindar servicios legales de alta calidad con un enfoque ético, humano y profesional, ofreciendo soluciones claras y personalizadas para cada cliente.</p>
+      </div>
+      <div class="mvv-item">
+        <h3>Visión</h3>
+        <p>Ser una firma legal reconocida por su excelencia, compromiso personal con cada uno de nuestros clientes, consolidándonos como líderes en consultoría legal y litigio.</p>
+      </div>
+      <div class="mvv-item">
+        <h3>Valores</h3>
+        <p>Lealtad, Ética, Responsabilidad, Empatía, Transparencia y Compromiso.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Testimonios -->
+  <section class="testimonios" id="testimonios" data-aos="fade-up">
+    <h2 data-aos="fade-up">Opinión de nuestros clientes</h2>
+    <div class="testimonios-grid">
+      <div class="testimonio" data-aos="fade-up" data-aos-delay="100">
+        <p>"Excelente atención, resolvieron mi caso con rapidez y profesionalismo. 100% recomendados."</p>
+        <span>★ ★ ★ ★ ★</span>
+        <h4>- Mariana G.</h4>
+      </div>
+      <div class="testimonio" data-aos="fade-up" data-aos-delay="200">
+        <p>"Muy agradecido con el trato y la estrategia legal. Muy buen trabajo."</p>
+        <span>★ ★ ★ ★ ★</span>
+        <h4>- Luis R.</h4>
+      </div>
+      <div class="testimonio" data-aos="fade-up" data-aos-delay="300">
+        <p>"Trato empático y resultados reales. Me dieron confianza desde el primer momento."</p>
+        <span>★ ★ ★ ★ ★</span>
+        <h4>- Sofía M.</h4>
+      </div>
+    </div>
+  </section>
+
+  <div class="botones-reseñas" data-aos="fade-up" data-aos-delay="400">
+    <a href="https://www.google.com/search?q=mendoza+avelar+abogados" class="btn" target="_blank">Ver reseñas en Google</a>
+  </div>
+
+  <!-- Contacto -->
+  <section class="contacto fade-in-section" id="contacto">
+    <h2 class="titulo-seccion">Contáctanos</h2>
+    <div class="contacto-flex">
+      
+      <!-- Lado izquiero -->
+      <div class="contacto-info-form" data-aos="fade-right">
+        <div class="datos-contacto">
+          <p><strong><i class="fa-solid fa-phone"></i> Teléfono:</strong> <a href="tel:+5540863376">55 4086 3376</a></p>
+          <p><strong><i class="fa-solid fa-envelope"></i> Correo:</strong> <a href="mailto:lic.mendozavelar@gmail.com">lic.mendozavelar@gmail.com</a></p>
+      
+
+        <form action="https://formspree.io/f/mzzgpzog" method="POST" class="formulario">
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="phone" name="phone" placeholder="Celular" required>
+          <textarea name="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="mensaje-exito" style="display: none; color: green; font-weight: bold; margin-top: 15px;">
+          ¡Tu mensaje ha sido enviado con éxito!
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Mendoza Avelar & Abogados Asociados</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, easing: 'ease-out-cubic', once: true });
+  </script>
+
+  <!-- Whatsapp-->
+  <a href="https://wa.me/5540863376" class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
+    <img src="../img/whatsapp-icon.svg" alt="WhatsApp">
+  </a>
+
+  <!-- Formulario de contacto -->
+  <div id="toast-exito" class="toast">¡Tu mensaje ha sido enviado con éxito!</div>
+  <script>
+      const formulario = document.querySelector(".formulario");
+      const toast = document.getElementById("toast-exito");
+
+      formulario.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const data = new FormData(formulario);
+        const response = await fetch(formulario.action, {
+          method: "POST",
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          formulario.reset();
+          toast.textContent = "¡Tu mensaje ha sido enviado con éxito!";
+          toast.style.backgroundColor = "#4CAF50";
+        } else {
+          toast.textContent = "Hubo un error. Intenta más tarde.";
+          toast.style.backgroundColor = "#e74c3c";
+        }
+
+        toast.classList.add("mostrar");
+
+        setTimeout(() => {
+          toast.classList.remove("mostrar");
+        }, 4000);
+      });
+  </script>
+
+  <!-- Boton hamburguesa -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.navbar ul');
+      menu.classList.toggle('mostrar');
+    }
+
+    // Cierra el menú al hacer clic en cualquier enlace
+    document.addEventListener('DOMContentLoaded', () => {
+      const links = document.querySelectorAll('.navbar ul li a');
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          const menu = document.querySelector('.navbar ul');
+          if (menu.classList.contains('mostrar')) {
+            menu.classList.remove('mostrar');
+          }
+        });
+      });
+    });
+  </script>
+
+
+</body>
+</html>

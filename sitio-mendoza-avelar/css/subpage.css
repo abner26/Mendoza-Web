@@ -1,0 +1,370 @@
+/* Estilo de hero */
+.hero-split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 40px;
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+  gap: 40px;
+}
+
+.hero-split .hero-texto {
+  flex: 1 1 480px;
+}
+
+.hero-split h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-split .subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--blanco);
+}
+
+.hero-split p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.hero-split .btn {
+  background-color: var(--dorado);
+  color: var(--azul-marino);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-split .btn:hover {
+  background-color: #b19000;
+}
+
+.hero-split .hero-imagen {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-split .hero-imagen img {
+  width: 100%;
+  height: 350px;           /* fija la altura uniforme */
+  object-fit: cover;       /* recorta proporcionalmente */
+  border-radius: 12px;
+  display: block;
+}
+
+/* Estilo estadística */
+.estadisticas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--gris-claro);
+  padding: 60px 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.estadistica {
+  flex: 1 1 200px;
+}
+
+.estadistica h3 {
+  font-size: 2.5rem;
+  color: var(--azul-marino);
+  margin-bottom: 10px;
+}
+
+.estadistica p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Estilo servicios */
+.servicios-pag {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--blanco);
+}
+
+.servicios-pag h2 {
+  font-size: 2.4rem;
+  color: var(--azul-marino);
+  margin-bottom: 10px;
+}
+
+.servicios-pag p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .grid-servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card-servicio {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  text-align: justify;
+}
+
+.card-servicio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.card-servicio h3 {
+  font-size: 22px;
+  color: var(--azul-marino);
+  margin-bottom: 10px;
+}
+
+.card-servicio p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.card-servicio ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.card-servicio ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.card-servicio ul li::before {
+  content: "\2022";
+  color: var(--dorado);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Estilo procesos */
+.proceso {
+  background-color: var(--gris-claro);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.proceso h2 {
+  font-size: 2.2rem;
+  color: var(--azul-marino);
+  margin-bottom: 10px;
+}
+
+.proceso-subtitulo {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proceso-lista {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.proceso-lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #222;
+}
+
+.proceso-lista li span {
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* Estilo Por que nosotros */
+.porque {
+  background-color: var(--blanco);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.porque h2 {
+  font-size: 2.2rem;
+  color: var(--azul-marino);
+  margin-bottom: 15px;
+}
+
+.porque-subtitulo {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.porque-lista {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.porque-lista li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.porque-lista li i {
+  color: var(--azul-marino);
+  font-size: 1.2rem;
+  margin-right: 12px;
+  width: 28px;
+  text-align: center;
+}
+
+/* CTA */
+.cta {
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta .btn {
+  background-color: var(--dorado);
+  color: var(--azul-marino);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.cta .btn:hover {
+  background-color: #b19000;
+}
+
+.cta-contacto {
+  font-size: 0.95rem;
+}
+
+.cta-contacto i {
+  margin-right: 8px;
+  color: var(--blanco);
+}
+
+.cta-contacto a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+/****** Corrección de vista en movil *********/
+@media (max-width: 768px) {
+  .hero-split {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-split h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-split .subtitulo {
+    font-size: 1.05rem;
+  }
+
+  .hero-split p {
+    max-width: 100%;
+  }
+
+  .hero-split .hero-imagen img {
+    height: auto;
+  }
+
+  .grid-servicios {
+    grid-template-columns: 1fr; /* una sola columna en móvil */
+  }
+
+  .porque-lista,
+  .proceso-lista {
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .estadisticas {
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  .estadistica h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-servicios .fila-doble {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
